@@ -1,11 +1,11 @@
 /*
- * Copyright (c) 2006-2026, RT-Thread Development Team
+ * Copyright (c) 2026, CXSforHPU
  *
  * SPDX-License-Identifier: Apache-2.0
  *
  * Change Logs:
  * Date           Author       Notes
- * 2026-09-11     RT-Thread    the first version, publish simulated sensor data via paho mqtt
+ * 2026-09-11     CXSforHPU    the first version, publish simulated sensor data via paho mqtt
  */
 
 #include <rtthread.h>
