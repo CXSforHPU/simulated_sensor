@@ -13,8 +13,6 @@
 
 #include <rtthread.h>
 
-#include "simu_sensor_port.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif

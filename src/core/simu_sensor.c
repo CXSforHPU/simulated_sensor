@@ -576,7 +576,7 @@ rt_err_t simu_sensor_init(SimuSensor *sensor, const char *name, SimuSensorType t
 
     /* 每个对象一条独立序列: 以 tick、对象地址与名称散列生成默认种子 */
     sensor->seed = ((rt_uint32_t)rt_tick_get() * 0x9E3779B9U) ^
-                   ((rt_uint32_t)(rt_uintptr_t)sensor) ^
+                   ((rt_uint32_t)(rt_ubase_t)sensor) ^
                    simu_sensor_name_hash(name);
 
     simu_sensor_random_init(&sensor->priv.rnd, sensor->seed);

@@ -307,7 +307,7 @@ void simu_sensor_random_init_auto(SimuSensorRandom *rnd)
 
     /* 系统 tick 与对象地址混合, 保证每次上电得到不同的序列 */
     seed  = (rt_uint32_t)rt_tick_get() * 0x9E3779B9U;
-    seed ^= (rt_uint32_t)(rt_uintptr_t)rnd * 0x85EBCA6BU;
+    seed ^= (rt_uint32_t)(rt_ubase_t)rnd * 0x85EBCA6BU;
 
     simu_sensor_random_init(rnd, seed);
 }
